@@ -34,7 +34,7 @@ func _process(_delta):
 			# Search backwards for occupied slot
 			for i in range(INVENTORY_SIZE):
 				if next_slot < 0:
-					next_slot = inventory.size() - 1
+					next_slot = inventory.size()
 				if next_slot < inventory.size() and not inventory[next_slot].is_empty():
 					selected_slot = next_slot
 					found = true
